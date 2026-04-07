@@ -9,7 +9,7 @@ def get_client():
 def transcribe(audio_bytes: bytes, filename="voice.webm") -> str:
     client = get_client()
     response = client.audio.transcriptions.create(
-        model="whisper-1",
+        model="GPT-4o",
         file=(filename, audio_bytes, "audio/webm"),
         language="ar",
         prompt="المحادثة بالعامية المصرية",
