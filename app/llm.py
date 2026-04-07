@@ -27,7 +27,7 @@ def generate_response(transcript: str, history: list) -> str:
 
     client = get_client()
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt4o",
         messages=messages,
         max_tokens=512,
         temperature=0.7,
